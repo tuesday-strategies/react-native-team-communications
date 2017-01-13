@@ -140,7 +140,38 @@ export const text = function(phoneNumber = null, body = null) {
 		LaunchURL(url);
 }
 
-export const web = function(address) {
+export const textWithoutEncoding = function(phoneNumber = null, body = null) {
+	if(arguments.length > 2) {
+			console.log('you supplied too many arguments. You can either supply 0 or 1 or 2');
+			return;
+		}
+
+		let url = 'sms:';
+
+		if(phoneNumber) {
+			if(isCorrectType('String', phoneNumber)) {
+				url += phoneNumber;
+			} else {
+				console.log('the phone number should be provided as a string. It was provided as '
+					+ Object.prototype.toString.call(phoneNumber).slice(8, -1)
+					+ ',ignoring the value provided');
+			}
+		}
+
+		if(body) {
+			if(isCorrectType('String', body)) {
+				url += Platform.OS === 'ios' ? `&body=${body}` : `?body=${body}`;
+			} else {
+				console.log('the body should be provided as a string. It was provided as '
+					+ Object.prototype.toString.call(body).slice(8, -1)
+					+ ',ignoring the value provided');
+			}
+		}
+
+		LaunchURL(url);
+}
+
+export const web = (address = null) => {
 	if(!address) {
       console.log('Missing address argument');
       return;
