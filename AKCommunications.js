@@ -218,4 +218,4 @@ const isCorrectType = function(expected, actual) {
 	return Object.prototype.toString.call(actual).slice(8, -1) === expected;
 };
 
-export default { phonecall, text, email, web }
+export default { phonecall, text, textWithoutEncoding, email, web }

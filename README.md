@@ -117,7 +117,7 @@ If 0 arguments are provided the new message view will launch with no recipient s
 
 If only 1 argument is supplied it will be interpreted as the phoneNumber argument. If it is the correct type then the new message view will be launched with the recipient specified and no message prefilled. If it is the incorrect type then it will be ignored and the new message view launched as if 0 arguments were supplied.
 
-If 2 arguments are provided the first will be interpreted as the phone number and the second as the message to prefill. If both arguments are the correct type then the new message view will be launched with the recipient specified and the message prefilled. If either argument is the wrong type it will be ignored. This makes it possible for example, to launch the new message view with no recipient but a prefilled message by calling `text(null, 'React Native is great!')`.
+If 2 arguments are provided the first will be interpreted as the phone number and the second as the message to prefill. If both arguments are the correct type then the new message view will be launched with the recipient specified and the message prefilled. If either argument is the wrong type it will be ignored. This makes it possible for example, to launch the new message view with no recipient but a prefilled message by calling `textWithoutEncoding(null, 'React Native is great!')`.
 
 The method will exit if more than 2 arguments are provided and the new message view will not be launched.
 
