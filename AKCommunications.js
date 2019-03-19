@@ -1,6 +1,7 @@
 'use strict';
 
 import {
+	Clipboard,
 	Linking,
 	Platform,
 } from 'react-native';
@@ -160,6 +161,7 @@ export const textWithoutEncoding = function(phoneNumber = null, body = null) {
 
 		if(body) {
 			if(isCorrectType('String', body)) {
+				Clipboard.setString(body)
 				url += Platform.OS === 'ios' ? `&body=${body}` : `?body=${body}`;
 			} else {
 				console.log('the body should be provided as a string. It was provided as '
