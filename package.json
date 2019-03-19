@@ -5,7 +5,7 @@
   "main": "AKCommunications.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anarchicknight/react-native-communications.git"
+    "url": "https://github.com/tuesday-strategies/react-native-team-communications.git"
   },
   "keywords": [
     "react",
@@ -21,13 +21,12 @@
     "android",
     "react-component"
   ],
-  "author": "Anarchic Knight <anarchicknight@gmail.com> (http://www.anarchicknight.co.uk)",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/anarchicknight/react-native-communications/blob/master/LICENSE"
+    "url": "https://github.com/tuesday-strategies/react-native-team-communications/blob/master/LICENSE"
   },
   "bugs": {
-    "url": "https://github.com/anarchicknight/react-native-communications/issues"
+    "url": "https://github.com/tuesday-strategies/react-native-team-communications/issues"
   },
-  "homepage": "https://github.com/anarchicknight/react-native-communications#readme"
+  "homepage": "https://github.com/tuesday-strategies/react-native-team-communications#readme"
 }
